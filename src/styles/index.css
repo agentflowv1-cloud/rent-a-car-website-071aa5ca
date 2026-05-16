@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #00698f;
+}
+
+h2 {
+  color: #0097e6;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
