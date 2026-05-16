@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useStore } from './store';
-import Home from './pages/Home';
-import CarCatalog from './pages/CarCatalog';
+import CarDetailsPage from './pages/CarDetailsPage';
+import axios from 'axios';
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/car-catalog" element={<CarCatalog />} />
+        <Route path="/" element={<CarDetailsPage />} />
       </Routes>
     </BrowserRouter>
   );
 }
+
 export default App;
