@@ -1,15 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import CarDetailsPage from './pages/CarDetailsPage';
-import axios from 'axios';
+import React, { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import './styles/app.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <div className='app'>
       <Routes>
-        <Route path="/" element={<CarDetailsPage />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
-    </BrowserRouter>
+    </div>
   );
 }
 
