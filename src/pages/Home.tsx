@@ -1,11 +1,12 @@
 import React from 'react';
+
 function Home() {
   return (
-    <div>
-      <h1>Welcome to the Car Catalog</h1>
-      <p>Click on the link below to view the car catalog.</p>
-      <a href="/car-catalog">View Car Catalog</a>
+    <div className='home'>
+      <h1>Welcome to our website!</h1>
+      <button><a href='/contact'>Contact Us</a></button>
     </div>
   );
 }
+
 export default Home;
